@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="ModuleOne.Views.ViewOne"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ModuleOne.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="400">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Navigate to View Two" HorizontalAlignment="Center" Margin="5" Command="{Binding NavigateToViewTwoCommand}"/>
+            <Button Content="Navigate to View Two And Close" HorizontalAlignment="Center" Margin="5" Command="{Binding NavigateToViewTwoAndCloseCommand}"/>
+            <Button Content="Navigate to View Three" HorizontalAlignment="Center" Margin="5" Command="{Binding NavigateToViewThreeCommand}"/>
+            <Button Content="Navigate to View Three And Close" HorizontalAlignment="Center" Margin="5" Command="{Binding NavigateToViewThreeAndCloseCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
